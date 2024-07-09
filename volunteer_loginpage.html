@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Food Help Foundation</title>
+
+    <style>
+        body{
+            background-color: #e6edff;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form action="volunteer_loginpage.php" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="submitForm()">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Redirect to donor_homepage.html
+            window.location.href = "volunteer_homepage.html";
+        }
+    </script>
+</body>
+</html>
